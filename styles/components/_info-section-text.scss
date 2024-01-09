@@ -1,0 +1,57 @@
+.info-section {
+  @include flexbox(center);
+  flex-flow: column;
+
+  &-text {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 30px 50px;
+    flex-shrink: 0;
+    border: 2px solid $border;
+    border-radius: 10px;
+    background-color: $white;
+    z-index: $info-section-text;
+
+    h1 {
+      position: relative;
+      font-size: 36px;
+      font-weight: 800;
+    }
+
+    .bottom-line::before {
+      content: '';
+      position: absolute;
+      left: 2px;
+      bottom: -20px;
+      width: 30px;
+      height: 4px;
+      background: $black;
+    }
+
+    .info-intro {
+      @include text-style(18);
+      line-height: 1.2;
+      margin-top: 40px;
+    }
+
+    .info-date {
+      @include text-style(24);
+      font-weight: 500;
+      margin-top: 20px;
+    }
+
+    .info-link {
+      margin-top: 20px;
+    } 
+  }
+
+@include responsive(T) {
+  @include flexbox(start);
+  flex-flow: row;
+
+  &-text {
+    margin-top: -20px;
+  }
+  }
+}
+

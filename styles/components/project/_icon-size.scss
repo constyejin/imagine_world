@@ -1,0 +1,17 @@
+.icon-size {
+  position: relative;
+  width: 144px;
+  height: 144px;
+  background-color: $white;
+  border-radius: 30px;
+  overflow: hidden;
+
+  img {
+    @include pos-center;
+    width: 185px;
+  }
+
+  .todo-icon {
+    width: 120px;
+  }
+}

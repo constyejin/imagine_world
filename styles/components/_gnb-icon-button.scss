@@ -1,0 +1,17 @@
+.gnb-icon-button {
+  @include flexbox;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-left: 10px;
+  transition: color 200ms ease-in-out;
+
+    &.is-menu {
+    color: $about-text-brigt;
+
+    &:active {
+      color: $secondary;
+    }
+  }
+}

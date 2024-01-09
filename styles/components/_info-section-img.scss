@@ -1,0 +1,75 @@
+.info-section {
+  &-img-emoji {
+    img {
+      width: 350px;
+    }
+  }
+
+  @include responsive(T) {
+    &-img {
+      position: relative;
+      height: 500px;
+      flex-grow: 1;
+      margin-left: -60px;
+      padding: 50px;
+      border: 5px solid $black;
+      border-radius: 10px;
+      background-color: $white;
+      z-index: $info-section-img;
+      background-image: url('/assets/images/info-bgc.png');
+      background-size: contain;
+      background-color: $black;
+      background-repeat: no-repeat;
+
+      &-hello {
+        &.left {
+          position: absolute;
+          top: 220px;
+          left: 150px;
+          animation-name: sayhello;
+          animation-duration: 2.5s;
+          animation-iteration-count: infinite;
+          transform-origin: 70% 70%;
+          display: inline-block;
+          font-size: 60px;
+        }
+
+        &.right {
+          position: absolute;
+          top: 220px;
+          right: 160px;
+          -moz-transform: scaleX(-1);
+          -o-transform: scaleX(-1);
+          -webkit-transform: scaleX(-1);
+          font-size: 60px;
+
+          span {
+            animation-name: sayhello;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            transform-origin: 70% 70%;
+            display: inline-block;
+          }
+        }
+      }
+
+      @keyframes sayhello {
+        0% { transform: rotate(0.0deg) }
+        10% { transform : rotate(14.0deg)}
+        20% { transform : rotate(-8.0deg)}
+        30% { transform : rotate(14.0deg)}
+        40% { transform : rotate(-4.0deg)}
+        50% { transform : rotate(10.0deg)}
+        60% { transform : rotate(0.0deg)}
+        100% { transform : rotate(0.0deg)}
+      }
+
+      &-emoji{
+        @include pos-center-x;
+        bottom: -20px;
+      }
+    }
+  }
+}
+
+

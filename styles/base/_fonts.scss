@@ -1,0 +1,15 @@
+* {
+  font-family: 'Montserrat', sans-serif !important;  
+}
+
+@font-face {
+  font-family: 'imagine';
+  src: url('./assets/fonts/imagine.eot');
+  src: url('./assets/fonts/imagine.eot#iefix') format('embedded-opentype'),
+    url('./assets/fonts/imagine.ttf') format('truetype'),
+    url('./assets/fonts/imagine.woff') format('woff'),
+    url('./assets/fonts/imagine.svg#imagine') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

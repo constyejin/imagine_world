@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+	font-family: 'Rajdhani', sans-serif;
+}
+h2 {
+	font-family: 'Acme', sans-serif;
+}
+body {
+    width: 100%;
+	font-family: 'Rajdhani', sans-serif;
+}
+.notice {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    background-color: #fd6b01;
+}
+.head_wrap {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    background-color: #00a1b3;
+    display: flex;
+    justify-content: space-between;
+}
+/*--- logo ---*/
+.logo img {
+    width: 200px;
+	margin-left: 90px;
+}
+
+/*--- gnb ---*/
+
+.gnb > ul {
+	display: flex;
+	margin-top: 35px;
+    text-align: center;
+}
+.gnb ul li {
+    margin-right: 50px;
+}
+.gnb li a {
+	font-family: 'Rajdhani', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.5s;
+    text-shadow: 0px 0px 3px #999;
+	font-size: 20px;
+}
+.gnb li a:hover {
+    color: #f47542;
+}
+/*--- head_bar ---*/
+.head_bar {
+    width: 100%;
+    height: 50px;
+    background-color: #aecaca;
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+}
+.login {
+	width: 900px;
+	min-width: 900px;
+    margin-left: 90px;
+}
+.login input {
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+}
+.head_bar > ul {
+    width: 220px;
+	min-width: 220px;
+    display: flex;
+	justify-content: space-between;
+    margin-right: 150px;
+}
+.head_bar > ul li a {
+    color: #fff;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+.head_bar > ul li a:hover {
+    color: #fd6b01;
+}
+/*--- shop menu ---*/
+section {
+    width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+.shop_gnb > ul {
+	width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.shop_gnb > ul li a {
+    font-weight: bold;
+    color: #777;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.shop_gnb > ul li a:hover {
+    color: #fd6b01;
+}
+.sub_menu {
+    position: absolute;
+    display: none;
+    background: #fff;
+    padding-top: 10px;
+    margin-left: -25px;
+    z-index: 1;
+}
+.sub_menu li {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+}
+.shop_gnb ul li:nth-child(1):hover .sub_menu {
+    display: block;
+}
+/*--- slide ---*/
+article {
+    width: 100%;
+}
+.banner {
+    width: 1200px;
+    margin: 0 auto 100px auto;
+    overflow: hidden;
+    position: relative;
+}
+.banner > ul {
+    display: flex;
+    width: 100%;
+}
+.banner > ul img {
+    width: 1200px;
+}
+.angle {
+    font-size: 36px;
+    color: #fff;
+    display: none;
+}
+.banner ul:hover ~ .angle {
+    display: block;
+}
+.angle:hover {
+    display: block;
+}
+.btn_left {
+    position: absolute;
+    top: 130px;
+    left: 20px;
+}
+.btn_right {
+    position: absolute;
+    top: 130px;
+    right: 20px;
+}
+.circle > ul {
+    position: absolute;
+    top: 270px;
+    left: 47%;
+    display: flex;
+}
+.circle li {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+.circle li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
+}
+.circle a:hover, .circle a.on {
+    background: #fd6b01;
+}
+/*--- goods ---*/
+.goods {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.goods img {
+    margin-top: -60px;
+    width: 250px;
+    transition: all 0.5s;
+}
+.goods p {
+    padding-top: 10px;
+    color: #777;
+    font-weight: bold;
+}
+.goods img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+.goods img:hover ~p {
+    color: #fd6b01;
+}
+.hottub img {
+    border-radius: 5px;
+}
+article button {
+    display: block;
+    margin: 50px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f47542;
+    color: #fff;
+}
+/*--- Footer ---*/
+
+footer {
+	background-color: #aecaca;
+}
+.footer_wrap {
+	width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.reward h2 {
+	color: #fff;
+	font-size: 28px;
+}
+.reward p {
+	font-size: 14px;
+	color: #fff;
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
+.reward input {
+	color: #888;
+	padding: 3px;
+	margin-bottom: 4px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.reward button {
+	border: none;
+	background: #999;
+	color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+.boat img {
+	width: 300px;
+}
+.footer_gnb li:nth-child(4){
+	margin-bottom: 10px;
+}
+.footer_gnb li p {
+	color: #fff;
+	font-weight: bold;
+}
+.footer_gnb li a {
+	color: #fff;
+	transition: all 0.5s;
+}
+.footer_gnb li a:hover {
+	color: #f47542;
+}

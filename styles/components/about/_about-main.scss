@@ -1,0 +1,77 @@
+.mac-main {
+  padding: 20px;
+
+  &-section {
+    color: $about-text;
+    border: 1px solid $border;
+    border-radius: 10px;
+    background-color: $dark;
+
+    .mac-btn {
+      height: 30px;
+      border-radius: 10px 10px 0 0;
+      border-bottom: 1px solid $border;
+      background-color: $primary;
+      
+      &-list {
+        @include flexbox(start);
+      }
+
+      &-item {
+        width: 15px;
+        height: 15px;
+        margin-top: 8px;
+        margin-right: 8px;
+        border-radius: 50%;
+
+        &.red {
+          margin-left: 10px;
+          background-color: $red;
+        }
+
+        &.yellow {
+          background-color: $yellow;
+        }
+
+        &.green {
+          background-color: $green;
+        }
+      }
+    }
+
+    .my-info {
+      padding: 20px;
+
+      &-name {
+        color: $about-text-brigt;
+        margin-bottom: 10px;
+      }
+
+      &-list {
+        margin-top: 20px;
+      }
+
+      &-item {
+        margin-top: 5px;
+
+        &:last-child {
+          font-size: 20px;
+          font-weight: 700;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .about-skills {
+      &-title {
+        color: $about-text-brigt;
+        margin-top: 20px;
+
+      }
+      &-list {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+

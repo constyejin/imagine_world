@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Uniform 4';
+    src:url("webfonts/Uniform 4.eot");
+    src:url(webfonts/Uniform 4.ttf) format(ttf),
+        url(webfonts/Uniform 4.woff) fotmat(woff);
+}
+@font-face {
+    font-family: 'Uniform 2'; /*bold*/
+    src:url("webfonts/Uniform 2.eot");
+    src:url(webfonts/Uniform 2.ttf) format(ttf),
+        url(webfonts/Uniform 2.woff) fotmat(woff);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    width: 100%;
+}
+header > div {
+    width: 1200px;
+    margin: 0 auto;
+}
+header h1 {
+    font-family: 'Uniform 2';
+    margin-top: 50px;
+    width: 110px;
+    border-bottom: 1px solid #ccc;
+}
+nav {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav > div > p {
+    font-size: 12px;
+}
+.wrapper {
+    margin: 120px 0 auto;
+    text-align: center;
+}
+.flag {
+    text-align: left;
+    display: inline-block;
+    margin-right: 50px;
+}
+.flag > div {
+    width: 430px;
+    height: 280px;
+    overflow: hidden; 
+}
+.flag > div img {
+    transition: all 0.5s ease-out;
+}
+.flag > div :hover {
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+.flag ul {
+    margin-top: 30px;
+}
+.flag ul li {
+    line-height: 35px;
+}
+.flag span {
+    font-weight: bold;
+}
+.location {
+    display: inline-block;
+}
+.location h3{
+    margin: 10px 0 10px 0;
+}
+.location p {
+    line-height: 26px;
+}
+.location > div {
+    width: 430px;
+    height: 280px;
+    overflow: hidden;
+}
+.location > div img {
+    transition: all 0.5s ease-out;
+}
+.location > div :hover {
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+.button {
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+input[type="button"] {
+    display: block;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #000;
+    font-family: 'Uniform 2';
+    padding: 10px 80px;
+    border-radius: 5px;
+}
+input:hover {
+    background: #000;
+    color: #fff;  
+}
+.culture {
+    width: 100%;
+}
+.culture img {
+    width: 300px;
+    height: 220px;
+}
+#culture_text {
+    width: 280px;
+}
+.culture_wrap {
+    width: 1200px;
+    margin: 60px 0 auto;
+    text-align: center;
+}
+.culture_wrap > div {
+    float: left;
+}
+.culture a {
+    color: #000;
+}
+#culture_text {
+    text-align: left;
+}
+#culture_text h2{
+    font-family: 'Uniform 4';
+    font-size: 20px;
+}
+#culture_text p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.art {
+    margin-bottom: 50px;
+}
+#culture_text:hover {
+    text-decoration: underline;
+}
+.box {
+    width: 300px;
+    height: 220px;
+    overflow: hidden;
+}
+.culture_wrap > div {
+    width: 300px;
+    overflow: hidden;
+}
+.culture_wrap > div img {
+    transition: all 0.5s ease-out;
+}
+.culture_wrap > div img:hover {
+    transform: scale(1.2);
+}
+.margin {
+	margin-bottom: 50px;
+}
+

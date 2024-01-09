@@ -1,0 +1,71 @@
+.project-section {
+  margin: 0 auto;
+  margin-top: 10px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  .mac-main-section {
+    color: $about-text;
+    border-radius: 10px;
+    background-color: $dark;
+  }
+
+  .mac-btn-list {
+    position: relative;
+  }
+
+  .project-title {
+    @include pos-center-x;
+    margin-top: 5px;
+    color: $white;
+    font-weight: 700;
+  }
+
+  &-main {
+    @include flexbox(center);
+    padding: 20px;
+    flex-flow: column;
+
+    .project-icon {
+      margin-top: 10px
+    }
+  }
+
+  &-list {
+    @include flexbox(center);
+    @include text-style(16);
+    flex-wrap: wrap;
+    margin-top: 15px;
+    color: $white;
+    max-width: 300px;
+  }
+
+  &-item {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 8px;
+    margin-top: 10px;
+    text-align: center;
+    border: 2px solid $white;
+    border-radius: 20px;
+  }
+  
+  @include responsive(T) {
+    &-main {
+      @include flexbox;
+      flex-flow: row;
+      padding: 60px 20px;
+
+      .project-icon {
+        margin-right: 40px;
+      }
+    }
+
+    &-list {
+      @include flexbox(start);
+      margin-top: 0%;
+    }
+  }
+}

@@ -1,0 +1,708 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Uniform';
+    src:url("webfonts/Uniform.eot");
+    src:url(webfonts/Uniform.ttf) format(ttf),
+        url(webfonts/Uniform.woff) fotmat(woff);
+}
+@font-face {
+    font-family: 'Uniform 2';
+    src:url("webfonts/Uniform 2.eot");
+    src:url(webfonts/Uniform 2.ttf) format(ttf),
+        url(webfonts/Uniform 2.woff) fotmat(woff);
+}
+@font-face {
+    font-family: 'Uniform 4';
+    src:url("webfonts/Uniform 4.eot");
+    src:url(webfonts/Uniform 4.ttf) format(ttf),
+        url(webfonts/Uniform 4.woff) fotmat(woff);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/*---------- MENU ----------*/
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+	width: 100%;
+    position: relative;
+}
+.menu {
+    width: 500px;
+    height: 100%;
+    position: fixed;
+    background: #fff;
+    z-index: 99999;
+    right: -550px;
+    box-shadow: 10px 0 15px 8px;
+}
+.fa-times {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+}
+#search_box {
+    width: 300px;
+    margin-top: 100px;
+    border: none;
+    border-bottom: 1px solid #222;
+}
+.main_menu {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+}
+.main_menu > li {
+    height: 60px;
+    line-height: 60px;
+}
+.main_menu > li.active {
+    background-color: forestgreen;
+    padding: 0 5px;
+}
+.main_menu > li > a {
+    font-family: 'Uniform 2';
+    font-size: 36px;
+    color: #222;
+    font-weight: bolder;
+}
+.li_first {
+    margin-top: 150px;
+}
+.sub li {
+    height: 50px;
+    line-height: 50px;
+}
+.sub li a {
+    font-size: 20px;
+    color: #222;
+}
+.sub li a:hover {
+    color: forestgreen;
+}
+/*---------- LOGO ---------*/
+.logo {
+    padding-top: 30px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+}
+.fa-bars {
+    position: absolute;
+    top: 190px;
+    right: 15px;
+    font-size: 24px;
+}
+.logo_img {
+	width: 706px;
+	height: 187px;
+	background: url(images/thailand/logo.jpg) no-repeat;
+    margin: 0 auto;
+}
+#box1 {
+    background: #fff;
+    width: 800px;
+    height: 5px;
+    margin: 0 auto;
+    position: relative;
+    top: 5px;
+}
+#box2 {
+    width: 710px;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+    position: relative;
+}
+/*--------- MAIN IMG ---------*/
+nav {
+	width: 1200px;
+}
+.nav_top {
+	position: relative;
+}
+.icon_btn li {
+	position: absolute;
+	z-index: 9999;
+	cursor: pointer;
+}
+.slide_wrap {
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.slide_img  {
+	display: flex;
+	cursor: pointer;
+}
+.slide_img li {
+    width: 100%;
+}
+.slide_img img {
+	width: 1200px;
+}
+.slide_btn {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	left: 47.6%;
+	bottom: 25px;
+}
+.slide_btn li {
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 50%;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.slide_btn li.on {
+	background-color: dodgerblue;
+}
+.nav_bottom {
+    margin: 150px 0 200px 0;
+}
+#nav_bottom {
+    width: 900px;
+    margin: 0 auto;
+}
+#nav_bottom img {
+    width: 300px;
+    float: left;
+}
+.nav_text {
+    text-align: center;
+}
+.nav_text h1 {
+	padding-top: 15px;
+    font-family: 'Uniform';
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+.nav_text h2 {
+    font-family: 'Uniform 2';
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.nav_text p {
+	font-size: 16px;
+	line-height: 25px;
+	font-family: 'Uniform 4';
+}
+.nav_text input[type=button] {
+    font-family: 'Uniform 4';
+    background: #000;
+    color: #fff;
+    border: none;
+    margin-top: 40px;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+.nav_text input[type=button]:active {
+    font-family: 'Uniform 4';
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+#board {
+	display: flex;
+	justify-content: center;
+}
+/*--------- SECTION --------*/
+section {
+    width: 600px;
+    margin: 0 auto;
+}
+/*--------- IMG --------*/
+.phiphi_img, .chiangmai_img, .chiangdao_img, .pai_img {
+	position: relative;
+}
+.sub_img_1, .sub_img_3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.sub_img_2, .sub_img_4 {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.front_img > img:nth-child(1) {
+    position: relative;
+    z-index: 777;
+}
+.phiphi_img {
+    float: right;
+}
+.chiangmai_img {
+    float: left;
+}
+.chiangdao_img {
+	clear: right;
+	float: left;
+    margin-top: -3px;
+}
+.pai_img {
+	clear: right;
+    float: left;
+    margin-bottom: 80px;
+    margin-top: -3px;
+}
+/*--------- TEXT --------*/
+section .txt {
+	line-height: 20px;
+	font-family: 'Uniform 4';
+}
+.left_text {
+    width: 300px;
+	height: 375px;
+    float: left;
+    background: #fff;
+    position: relative;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.left_text h1 {
+    font-family: 'Uniform';
+    margin: 30px 0;
+    font-size: 24px;
+}
+.left_text h2 {
+    font-family: 'Uniform 2';
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.txt{
+	font-size: 12px;
+}
+.chiangdao h1 {
+	margin-top: 30px;
+}
+.left_line {
+    width: 80px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+.right_text {
+    float: left;
+	width: 300px;
+    height: 375px;
+	padding-left: 30px;
+	box-sizing: border-box;
+    background: #fff;
+    position: relative;
+	font-family: 'Uniform 4';
+}
+.right_text h1 {
+    font-family: 'Uniform';
+    margin: 30px 0;
+    font-size: 24px;
+}
+.right_text h2 {
+	width: 300px;
+    font-family: 'Uniform 2';
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.right_line {
+    width: 80px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.side_text1, .side_text3 {
+    width: 300px;
+    height: 375px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+	font-size: 36px;
+    font-weight: bold;
+    z-index: -777;
+	font-family: 'Uniform';
+}
+.side_text2, .side_text4 {
+    width: 300px;
+    height: 375px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: end;
+    position: absolute;
+    top: -4px;
+    right: 0;
+    font-size: 36px;
+    font-weight: bold;
+    z-index: -777;
+	font-family: 'Uniform';
+}
+/*--------- BUTTON --------*/
+button {
+    font-family: 'Uniform 4';
+    margin-top: 20px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    background: #000;
+    color: #fff;
+	font-size: 12px;
+}
+button:active {
+    font-family: 'Uniform 4';
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.chiangdao h2 {
+    width: 200px;
+}
+/*--------- FOOTER --------*/
+footer {
+    clear: left;
+    width: 1200px;
+    border-top: 1px solid #ccc;
+}
+footer a {
+    color: #000;
+}
+.footer_wrap {
+    width: 1000px;
+    height: 390px;
+    margin: 0 auto;
+    text-align: center;
+	font-family: 'Uniform 4';
+}
+.footer_wrap > li {
+    width: 250px;
+    float: left;
+}
+.footer_wrap > li h2 {
+    font-family: 'Uniform 2';
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#about p {
+    line-height: 30px;
+}
+#about,#quick {
+    margin-top: 15px;
+}
+#about h2,#quick h2 {
+    margin-bottom: 45px;
+}
+.footer_hover > ul li {
+    line-height: 30px;
+}
+.footer_hover > ul li:hover a{
+	color: forestgreen;
+	font-family: 'Uniform 2';
+	font-weight: bold;
+}
+.border {
+    clear: left;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+.address {
+    font-family: 'Uniform 4';
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+/*---------- 반응형 태블릿 ----------*/
+
+@media (max-width: 768px) {
+
+body {
+	width: 95%;
+	min-width: 460px;
+}
+header {
+	width: 100%;
+}		
+.logo {
+    padding-top: 30px;
+	padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+.fa-bars {
+    position: absolute;
+    top: 105px;
+    right: 10px;
+    font-size: 16px;
+}
+.logo_img {
+	width: 80px;
+	height: 80px;
+	background: url(images/thailand/Untitled-2.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#box1 {
+   display: none;
+}
+#box2 {
+    border-bottom: none
+}
+nav {
+	width: 100%;
+}
+.slide_wrap {
+	width: 100%;
+	height: 450px;
+	background: url(images/thailand/Untitled-1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.slide_img li {
+	display: none;
+}
+.slide_btn {
+	display: none;
+}	
+.nav_bottom {
+    margin: 50px 0 100px 0;
+}
+#nav_bottom {
+    width:100%;
+    margin: 0 auto;
+}
+#nav_bottom img {
+   display: none;
+}
+.nav_text h1 {
+    font-size: 40px;
+}
+.nav_text h2 {
+    font-size: 20px;
+}
+.sub_img_1, .sub_img_3 {
+	display: none;
+}
+.sub_img_2, .sub_img_4 {
+	display: none;
+}
+.side_text1, .side_text3 {
+    display: none;
+}
+.side_text2, .side_text4 {
+    display: none;
+}	
+footer {
+    width: 100%;
+	margin: 0 auto;
+	font-size: 14px;
+}
+footer a {
+	font-size: 12px;
+}
+.footer_wrap {
+    width: 95%;
+	display: flex;
+}
+.footer_wrap > li {
+    float: none;
+}
+#about p {
+    line-height: 30px;
+}
+#about,#quick {
+    margin-top: 15px;
+}
+#about h2 {
+    margin-bottom: 40px;
+}
+#quick h2 {
+	margin-bottom: 35px;
+}	
+.footer_hover > ul li {
+    line-height: 30px;
+}
+.footer_hover > ul li:hover a{
+	color: forestgreen;
+	font-family: 'Uniform 2';
+	font-weight: bold;
+}
+.border {
+    clear: left;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+.address {
+    width: 100%;
+	font-size: 10px;
+}
+}
+
+/*---------- 반응형 모바일 ----------*/
+
+@media (max-width: 360px) {
+
+body {
+	min-width: 310px;
+}
+.menu {
+	width: 100%;
+	text-align: center;
+}
+#search_box {
+    width: 200px;
+    margin-top: 120px;
+}
+.main_menu > li {
+    height: 40px;
+    line-height: 40px;
+}
+.main_menu > li > a {
+    font-size: 24px;
+}  
+.logo {
+    padding-top: 20px;
+	padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+.fa-bars {
+    top: 75px;
+	right: 5px;
+	font-size: 12px;
+}
+.logo_img {
+	width: 60px;
+	height: 60px;
+}
+.slide_wrap {
+	height: 200px;
+}
+.nav_bottom {
+    margin: 30px 0 50px 0;
+}
+.nav_text h1 {
+    font-size: 20px;
+}
+.nav_text h2 {
+    font-size: 12px;
+}	
+.nav_text p {
+	font-size: 12px;
+}	
+.nav_text input[type=button] {
+    margin-top: 30px;
+    padding: 7px 10px;
+	font-size: 12px;
+}
+section {
+    width: 100%;
+    text-align: center;
+}
+.sub_img_1, .sub_img_3 {
+	display: none;
+}
+.sub_img_2, .sub_img_4 {
+	display: none;
+}
+.phiphi_img {
+    float: none;
+	margin-bottom: 10px;
+}
+.chiangmai_img {
+    float: none;
+}
+.chiangdao_img {
+	float: none;
+    margin-top: 10px;
+}
+.pai_img {
+    float: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}	
+section .txt {
+	line-height: 20px;
+	font-family: 'Uniform 4';
+}
+.left_text {
+  	display: none;
+}
+.left_line {
+    display: none;
+}
+.right_text {
+    display: none;
+}
+.right_line {
+    display: none;
+}
+.side_text1, .side_text3 {
+    display: none;
+}
+.side_text2, .side_text4 {
+    display: none;
+}
+button {
+   display: none;
+}
+footer {
+    width: 100%;
+	font-size: 12px;
+}
+.footer_wrap {
+    width: 90%;
+    height: 750px;
+	display: flex;
+	flex-flow: column;
+}
+.footer_wrap > li {
+    width: 100%;
+}
+.footer_wrap > li h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#about h2{
+    margin-top: 20px;
+}      
+#about p {
+    line-height: 15px;
+}    
+#about, #seo {
+    text-align: left;
+}
+#marketing, #quick {
+    text-align: right;
+}
+#about,#quick {
+    margin-top: 0px;
+}
+#about h2,#quick h2 {
+    margin-bottom: 10px;
+}    
+.footer_hover > ul li {
+    line-height: 20px;
+}
+.border {
+    clear: left;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+.address {
+    font-size: 8px;
+}
+}	
+	

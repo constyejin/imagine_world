@@ -1,0 +1,42 @@
+.about-footer {
+  .contact-list {
+    @include flexbox;
+    color: $white;
+
+    &-title {
+      padding: 15px
+    }
+
+    &-item {
+      @include text-style(16);
+      font-weight: 500;
+
+      a {
+        display: block;
+        padding: 10px;
+        transition: opacity 200ms ease-in-out, font-weight 200ms ease-in-out;
+
+        &:active {
+          opacity: .6;
+          font-weight: 600;
+        }
+      }
+    }
+
+    @include responsive(T) {
+      @include flexbox(start);
+
+      &-item {
+        a {
+          transition: transform 200ms ease-in-out, font-weight 200ms ease-in-out;
+          padding: 15px;
+
+          &:hover {
+            transform: scale(1.1);
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
